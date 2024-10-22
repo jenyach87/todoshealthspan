@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import TodoList from './components/TodoList';
 import { TodoForm } from './components/TodoForm';
 import styles from './components/Components.module.css';
@@ -35,9 +35,9 @@ function App() {
     initData()
   }, [accessToken, authorizeUser, fetchTodos, setAuthData]);
 
-  const onCloseShowForm = () => {
+  const onCloseShowForm = useCallback(() => {
     openForm()
-  };
+  }, [openForm]);
 
   return (
     <div className={styles.app}>

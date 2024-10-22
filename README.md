@@ -48,3 +48,27 @@ export default tseslint.config({
   },
 })
 ```
+
+## Project Overview
+This project is a Todo application developed using **React**, **TypeScript**, and **Vite**. It allows users to create, update, delete, and manage tasks effectively.
+
+### Features
+- **Fetch Todo**: Users can view their list of tasks.
+- **Create Todo**: Users can add new tasks to their list.
+- **Update Todo**: Users can edit existing tasks.
+- **Delete Todo**: Users can remove tasks from the list.
+- **Changes Status**: Users can switch between different statuses (Pending, Done, Won't do) for each task.
+
+### Setup and Run
+
+To set up and run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:jenyach87/todoshealthspan.git
+   cd todoshealthspan
+
+2. Install dependencies: npm install
+3. Run the development: npm run dev
+4. Open your browser and navigate to http://localhost:5173 to view the application.
+5. How the state manager used zustand
