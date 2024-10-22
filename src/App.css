@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header_block {
+  background-color: #4A90E2; /* Задайте фон для заголовка */
+  color: white;
+  text-align: center;
+}
+
+.todo_container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.add_block {
+  position: fixed;
+  bottom: 0;
+  background-color: #4A90E2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.add_button:hover {
+  background-color: #0056b3;
+}
