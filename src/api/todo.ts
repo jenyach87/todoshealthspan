@@ -27,7 +27,6 @@ const useTodoApi = () => {
       }
     } catch (e) {
       if (axios.isAxiosError(e)) {
-        console.log(e.response);
         if (e.response?.status === 401) {
           await reAuthorizeUser();
           await fetchTodos();
@@ -45,7 +44,6 @@ const useTodoApi = () => {
       });
     } catch (e) {
       if (axios.isAxiosError(e)) {
-        console.log(e.response);
         if (e.response?.status === 401) {
           await reAuthorizeUser();
           await createTodo(todo);
@@ -63,7 +61,6 @@ const useTodoApi = () => {
       });
     } catch (e) {
       if (axios.isAxiosError(e)) {
-        console.log(e.response);
         if (e.response?.status === 401) {
           await reAuthorizeUser();
           await updateTodo(id, todo);
@@ -85,7 +82,6 @@ const useTodoApi = () => {
       );
     } catch (e) {
       if (axios.isAxiosError(e)) {
-        console.log(e.response);
         if (e.response?.status === 401) {
           await reAuthorizeUser();
           await switchTodoStatus(id, status);
@@ -103,7 +99,6 @@ const useTodoApi = () => {
       });
     } catch (e) {
       if (axios.isAxiosError(e)) {
-        console.log(e.response);
         if (e.response?.status === 401) {
           await reAuthorizeUser();
           await deleteTodo(id);

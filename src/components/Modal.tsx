@@ -8,14 +8,12 @@ const Modal = () => {
   const selectedTodoId = useFormStore(state => state.selectedTodoId);
   const closeModal = useFormStore(state => state.closeModal);
   const handleDelete = useCallback(async () => {
-    console.log("CloseModal", selectedTodoId);
     await deleteTodo(selectedTodoId);
     await fetchTodos();
     closeModal()
   }, [deleteTodo, fetchTodos, selectedTodoId, closeModal]);
 
   const handleCloseModal = useCallback(() => {
-    console.log("CloseModal");
     closeModal()
   }, [closeModal]);
   return (
