@@ -71,7 +71,6 @@ export const TodoItem: React.FC<ITodoItemProps> = ({ todo }) => {
             <button onClick={() => handleDelete()}><Delete className={styles.icon_form} /></button>
           </div>
         </div>
-
       </div>
       {isStatusBlockOpen && (
         <div className={styles.status_container}>
