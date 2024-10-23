@@ -7,6 +7,7 @@ const Modal = () => {
   const { fetchTodos, deleteTodo } = useTodoApi();
   const selectedTodoId = useFormStore(state => state.selectedTodoId);
   const closeModal = useFormStore(state => state.closeModal);
+  
   const handleDelete = useCallback(async () => {
     await deleteTodo(selectedTodoId);
     await fetchTodos();
@@ -16,6 +17,7 @@ const Modal = () => {
   const handleCloseModal = useCallback(() => {
     closeModal()
   }, [closeModal]);
+
   return (
     <div  className={styles.overlay}>
       <div className={styles.modal_block}>

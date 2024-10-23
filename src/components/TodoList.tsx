@@ -4,6 +4,7 @@ import { useTodoStore } from '../zustand/todo';
 
 const TodoList = () => {
   const todos = useTodoStore(state => state.todos);
+  
   return (
     <div className={styles.listItems}>
       {todos.map(todo => (
