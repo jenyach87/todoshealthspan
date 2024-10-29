@@ -1,0 +1,149 @@
+.item_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  padding: 8px;
+  box-shadow: 0px 4px 32px 0px #0000000a;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.item_content {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_block_content {
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .item_block_content {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-width: 100%;
+  }
+}
+.item_description {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+}
+.item_title {
+  font-family: Red Hat Display;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 11.91px;
+}
+.form_buttons {
+  display: flex;
+  margin-left: 5px;
+}
+.form_buttons > button {
+  margin-right: 20px;
+}
+.icon_form {
+  width: 19px;
+  height: 19px;
+}
+.pending_button {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  border: 1px solid #fcbf49;
+}
+.active_pending {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color: #ffffff;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  border: 1px solid #fcbf49;
+  background-color: #fcbf49;
+}
+.done_button {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  border: 1px solid #588157;
+}
+.active_done {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color: #ffffff;
+  background: #588157;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  border: 1px solid #588157;
+}
+.wont_button {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #d62828;
+}
+.active_wont {
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color: #ffffff;
+  width: 80px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 72px;
+  opacity: 0px;
+  background: #d62828;
+  border: 1px solid #d62828;
+}
+.status_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+.item_contentWrapper {
+  width: 100%;
+  display: flex;
+}
+.status_circle {
+  margin: 0 5px;
+}

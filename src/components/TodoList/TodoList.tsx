@@ -1,6 +1,6 @@
-import styles from "./Components.module.css"
-import { TodoItem } from './TodoItem';
-import { useTodoStore } from '../zustand/todo';
+import styles from "./TodoList.module.css"
+import { TodoItem } from '../TodoItem/TodoItem';
+import { useTodoStore } from '../../zustand/todo';
 
 const TodoList = () => {
   const todos = useTodoStore(state => state.todos);

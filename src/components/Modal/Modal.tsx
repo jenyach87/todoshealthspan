@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
-import useTodoApi from '../api/todo';
-import useFormStore from '../api/form';
-import styles from "../components/Components.module.css"
+import useTodoApi from '../../api/todo';
+import useFormStore from '../../zustand/form';
+import styles from "./Modal.module.css"
 
 const Modal = () => {
   const { fetchTodos, deleteTodo } = useTodoApi();

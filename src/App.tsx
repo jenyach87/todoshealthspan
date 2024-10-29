@@ -1,13 +1,13 @@
 import { useCallback, useEffect } from 'react';
-import TodoList from './components/TodoList';
-import { TodoForm } from './components/TodoForm';
-import styles from './components/Components.module.css';
+import TodoList from './components/TodoList/TodoList';
+import { TodoForm } from './components/TodoForm/TodoForm';
 import Add from "./assets/Add.svg?react";
 import { useAuthStore } from "./zustand/auth";
 import useAuthApi from "./api/auth";
 import useTodoApi from './api/todo';
-import useFormStore from './api/form';
-import Modal from './components/Modal';
+import useFormStore from './zustand/form';
+import Modal from './components/Modal/Modal';
+import styles from "./App.module.css"
 
 function App() {
   const setAuthData = useAuthStore(state => state.setAuthData);

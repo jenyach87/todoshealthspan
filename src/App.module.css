@@ -1,0 +1,63 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+/*APP*/
+.app {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(223, 243, 254);
+  padding: 8px 16px;
+}
+
+.header_block {
+  height: 25px;
+  margin-top: 10px;
+  font-family: Red Hat Display;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 25.14px;
+  color: rgb(30, 30, 30);
+  text-align: center;
+}
+
+.todo_container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.add_block {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.main_page {
+  height: 100vh;
+}
+.add_button {
+  background: #5f33e1;
+  width: 50px;
+  height: 50px;
+  gap: 0px;
+  border-radius: 50%;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

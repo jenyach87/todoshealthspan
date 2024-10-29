@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Status } from '../models/Todo';
-import styles from "../components/Components.module.css";
-import useTodoApi from '../api/todo';
-import useFormStore from '../api/form';
+import { Status } from '../../models/Todo';
+import styles from "./TodoForm.module.css";
+import useTodoApi from '../../api/todo';
+import useFormStore from '../../zustand/form';
 
 export const TodoForm = () => {
   const { title, description, setTitle, setDescription, closeForm, resetForm, editingTodo } = useFormStore(); // Стан редагування

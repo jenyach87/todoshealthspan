@@ -1,7 +1,5 @@
-import axios from "axios";
+import axiosInstance from "../helpers/axios";
 import { useAuthStore } from "../zustand/auth";
-
-const BASE_URL = "/api/v1/auth";
 
 const useAuthApi = () => {
   const setAuthData = useAuthStore((state) => state.setAuthData);
@@ -9,7 +7,7 @@ const useAuthApi = () => {
   const userId = useAuthStore((state) => state.userId);
 
   const authorizeUser = async () => {
-    const response = await axios.post(BASE_URL, {});
+    const response = await axiosInstance.post("/auth", {});
     const data = response.data;
     if (data) {
       localStorage.setItem("authData", JSON.stringify(data));
@@ -18,7 +16,7 @@ const useAuthApi = () => {
   };
 
   const reAuthorizeUser = async () => {
-    const response = await axios.post(BASE_URL + "/refresh", {
+    const response = await axiosInstance.post("/auth/refresh", {
       id: userId,
       refreshToken,
     });
